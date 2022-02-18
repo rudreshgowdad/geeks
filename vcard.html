@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vcard</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-color: lightgreen;
+        }
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15vh;
+            box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+        }
+        h1 {
+            letter-spacing: 1.5vw;
+            font-family: 'system-ui';
+            text-transform: uppercase;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75vh;
+            width: 100%;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
+            background-size: cover;
+        }
+        .form_class {
+            width: 500px;
+            padding: 40px;
+            border-radius: 8px;
+            background-color: white;
+            font-family: 'system-ui';
+            box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+        }
+        .form_div {
+            text-transform: uppercase;
+        }
+        .form_div > label {
+            letter-spacing: 3px;
+            font-size: 1rem;
+        }
+        .info_div {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .info_div {
+            letter-spacing: 1px;
+        }
+        .field_class {
+            width: 100%;
+            border-radius: 6px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px 0px;
+            text-indent: 6px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: 'system-ui';
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+        .submit_class {
+            border-style: none;
+            border-radius: 5px;
+            background-color: #FFE6D4;
+            padding: 8px 20px;
+            font-family: 'system-ui';
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .oval {
+            width: 125px;
+            height: 140px;
+            background: #a84909;
+            border-radius: 200px;
+            margin-left: 150px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rudresh Gowda</h1>
+    </header>
+    <main>
+        <form id="vcarf" class="form_class">
+            <div class="form_div">
+                <div class="oval">
+                    <img src="data:image/jpeg;base64,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" alt="image not found">
+
+                </div>       
+            </div>
+            <div class="info_div" style="margin-top: 125px">
+                I'm Rudresh, Graduted from AIT Bangalore</br>
+                Completed My MCA</br>
+                Looking forward start my Carrier in MNC Company.
+            </div>
+        </form>
+    </main>
+</body>
+</html>
